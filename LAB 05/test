@@ -1,0 +1,19 @@
+itemprice = int(input("Enter the price of the item: "))
+tagcolor = input("Enter the color of the tag: ")
+membercard = input("Do you have a member card? (Y/N): ")
+if tagcolor == "red":
+    if membercard == "Y":
+        itemprice = itemprice * 0.9
+    else:
+        itemprice = itemprice * 0.95
+elif tagcolor == "blue":
+    if membercard == "Y":
+        itemprice = itemprice * 0.8
+    else:
+        itemprice = itemprice * 0.85
+elif tagcolor == "green":
+    if membercard == "Y":
+        itemprice = itemprice * 0.7
+    else:
+        itemprice = itemprice * 0.75
+print("The price of the item is: ", itemprice)
